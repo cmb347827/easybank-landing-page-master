@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+html,
+body {
+  background-color: Snow;
+  background-color: white;
+  color: black;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+.top-z-index {
+  position: relative;
+  z-index: 1;
+  opacity: 1; }
+
+#desktop-button {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  #desktop-button {
+    display: block; } }
+footer .attribution {
+  display: block;
+  width: 20%;
+  padding: 0;
+  margin: 0 auto; }
+@media screen and (min-width: 768px) {
+  footer {
+    position: relative;
+    top: 10em; } }
+
+/*# sourceMappingURL=easybank-landing-page-master.css.map */
