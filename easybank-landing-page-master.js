@@ -18,5 +18,13 @@ $(window).on('load',function(){
 		$('#open').toggleClass('hidden');
 		$('#nav').removeClass('custom-nav');
     });
+    
+	/*var mySVGsToInject = document.querySelectorAll('.svg-project');
 
+    // Do the injection
+    SVGInjector(mySVGsToInject);
+	SVGInject.setOptions({
+		
+		makeIdsUnique: true,
+	});*/
 });

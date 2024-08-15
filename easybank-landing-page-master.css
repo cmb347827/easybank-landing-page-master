@@ -24,12 +24,30 @@ body {
   z-index: 1;
   opacity: 1; }
 
-#desktop-button {
-  display: none; }
+header {
+  padding: 2em; }
+  header #desktop-button {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 4em; }
+      header #desktop-button {
+        display: block; } }
 
-@media screen and (min-width: 768px) {
-  #desktop-button {
-    display: block; } }
+.outer {
+  padding: 2em; }
+  .outer__first .mobile {
+    display: block; }
+  .outer__first .desktop {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    .outer {
+      padding: 4em; }
+      .outer .mobile {
+        display: none; }
+      .outer .desktop {
+        display: block; } }
+
 footer .attribution {
   display: block;
   width: 20%;
