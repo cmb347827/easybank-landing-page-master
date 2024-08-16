@@ -40,6 +40,11 @@ header {
     display: block; }
   .outer__first .desktop {
     display: none; }
+  .outer__second .svg-outer {
+    max-width: 50%;
+    max-height: 50%; }
+  .outer__second .card {
+    border: none; }
   @media screen and (min-width: 768px) {
     .outer {
       padding: 4em; }
