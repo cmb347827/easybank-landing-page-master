@@ -52,6 +52,8 @@ Users should be able to:
 - I had some trouble with the intro SVGs and from my research, probably because they have the same IDs. I had first added the SVGs embedded inline into the html file.
   I read that for the SVGs to be responsive the width/height need to be removed from the SVG tag and to only use viewBox with width/height values.
   And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` 
+- Then I also had trouble with SVGs again when I wanted to use flex to place items center or to the start based on screensize.
+  I found a stackoverflow post that explained it was because my svg has no internal width/height 
  
 ### Continued development
 
@@ -59,7 +61,7 @@ Users should be able to:
 
 ### Useful resources
 
-
+ 
 
 
 ## Author

@@ -40,9 +40,16 @@ header {
     display: block; }
   .outer__first .desktop {
     display: none; }
+  .outer__second svg {
+    width: 100%;
+    height: 100%; }
   .outer__second .svg-outer {
-    max-width: 50%;
-    max-height: 50%; }
+    max-width: 20%;
+    max-height: 20%; }
+  @media screen and (min-width: 768px) {
+    .outer__second .svg-outer {
+      max-width: 50%;
+      max-height: 50%; } }
   .outer__second .card {
     border: none; }
   @media screen and (min-width: 768px) {
