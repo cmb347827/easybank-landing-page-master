@@ -50,10 +50,10 @@ Users should be able to:
 ### What I learned
 
 - I had some trouble with the intro SVGs and from my research, probably because they have the same IDs. I had first added the SVGs embedded inline into the html file.
-  I read that for the SVGs to be responsive the width/height need to be removed from the SVG tag and to only use viewBox with width/height values.
-  And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` 
-- Then I also had trouble with SVGs again when I wanted to use flex to place items center or to the start based on screensize.
-  I found a stackoverflow post that explained it was because my svg has no internal width/height 
+  I read that for the SVGs to be responsive the width/height need to be removed from the SVG tag and to only use viewBox with width/height values (see link 3)
+- And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` (see link 2)
+- Then I also had trouble with outer__second SVGs again when I wanted to use flex to place items center or to the start based on screensize.
+  I found a stackoverflow post that explained it was because my svg has no internal width/height. I added a wrapper element to fix this (see link 1)
  
 ### Continued development
 
@@ -61,8 +61,11 @@ Users should be able to:
 
 ### Useful resources
 
- 
+ [Svg dissapears when parent is displayed flex](https://stackoverflow.com/questions/46922999/inline-svg-disappears-with-flexbox)
 
+ [Multiple svgs with same id](https://stackoverflow.com/questions/37000385/multiple-svg-with-same-ids)
+
+ [Scaling svgs](https://css-tricks.com/scale-svg/)
 
 ## Author
 
