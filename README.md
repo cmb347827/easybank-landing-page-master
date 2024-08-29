@@ -54,6 +54,10 @@ Users should be able to:
 - And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` (see link 2)
 - Then I also had trouble with outer__second SVGs again when I wanted to use flex to place items center or to the start based on screensize.
   I found a stackoverflow post that explained it was because my svg has no internal width/height. I added a wrapper element to fix this (see link 1)
+- I had trouble getting the images in outer__third to be the same height, even though the heights are all specified to 400px in img. 
+  I remembered using aspect-ratio before with images, and thought I'd try it on img and it worked.
+- I also had some trouble (when I used flex) to get the columns to be the same width, so decided to try with grid instead.
+  (see link 4)
  
 ### Continued development
 
@@ -66,6 +70,10 @@ Users should be able to:
  [Multiple svgs with same id](https://stackoverflow.com/questions/37000385/multiple-svg-with-same-ids)
 
  [Scaling svgs](https://css-tricks.com/scale-svg/)
+
+ [Equal width with flexbox is more complicated](https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/)
+
+ [Equal width with grid ](https://stackoverflow.com/questions/47601564/equal-width-columns-in-css-grid)
 
 ## Author
 
