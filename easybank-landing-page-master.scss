@@ -85,6 +85,7 @@ body {
       }
     }
     .outer{
+         
         .outer-grid{
             display:grid;
             grid-template-columns: 1fr;
@@ -115,6 +116,17 @@ body {
               display:block;
             }
             .desktop{display:none;}
+            .movedown{
+              position:relative;
+              top:min(27vw,240px);  //15em(240px)at 900px viewport,
+            }
+            .moveup{
+              position:relative;
+              bottom:min(27vw,240px);  //10em(160px) at 900px viewport
+            }
+            #mockup{
+              aspect-ratio: 0.5/0.5;
+            }
         }
         &__second{
            svg{
@@ -137,6 +149,7 @@ body {
             }
         }
         @media screen and(min-width:768px){
+           margin-top:-15em;
            @include padding(4em);
            .mobile{display:none;}
            .desktop{display:block;}
