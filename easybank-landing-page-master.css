@@ -59,26 +59,47 @@ header {
     display: block; }
   .outer__first .desktop {
     display: none; }
-  .outer__first .movedown {
-    position: relative;
-    top: min(27vw, 240px); }
+  @media screen and (min-width: 768px) {
+    .outer__first #first-text {
+      position: relative; } }
+  .outer__first .svg-container {
+    position: relative; }
+  .outer__first .pos-absolute {
+    position: absolute; }
   .outer__first .moveup {
-    position: relative;
-    bottom: min(27vw, 240px); }
+    bottom: 5em; }
+    @media screen and (min-width: 1600px) {
+      .outer__first .moveup {
+        bottom: 8em; } }
+  .outer__first .movedown {
+    top: 4em; }
+    @media screen and (min-width: 1600px) {
+      .outer__first .movedown {
+        top: 4em; } }
+  @media screen and (min-width: 1600px) {
+    .outer__first .moveright {
+      left: max(20vw, 400px); } }
   .outer__first #mockup {
-    aspect-ratio: 0.5/0.5; }
+    aspect-ratio: 0.5/0.7; }
   .outer__second svg {
     width: 100%;
     height: 100%; }
   .outer__second .grid-item {
     place-self: start; }
+  @media screen and (min-width: 768px) {
+    .outer__second {
+      position: relative;
+      top: 5em; } }
   .outer__third .grid-item {
     place-self: start; }
   .outer__third img {
     aspect-ratio: 1.5 / 1; }
   @media screen and (min-width: 768px) {
+    .outer__third {
+      position: relative;
+      top: 5em; } }
+  @media screen and (min-width: 768px) {
     .outer {
-      margin-top: -15em;
       padding: 4em; }
       .outer .mobile {
         display: none; }
@@ -93,6 +114,11 @@ footer .attribution {
 @media screen and (min-width: 768px) {
   footer {
     position: relative;
-    top: 10em; } }
+    top: 7em; } }
+
+@media screen and (min-width: 768px) {
+  aside {
+    position: relative;
+    top: 8em; } }
 
 /*# sourceMappingURL=easybank-landing-page-master.css.map */

@@ -35,8 +35,8 @@
       </header>
       <main class="outer container-fluid">
             
-          <section class="outer__first row d-flex flex-md-row flex-column align-items-md-center">
-                <div class="col col-md-5">
+          <section class="outer__first row d-flex flex-md-row flex-column align-items-md-center border">
+                <div id='first-text' class="col col-md-5 pe-5">
                    <h1>Next generation digital banking</h1>
 
                    <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
@@ -45,10 +45,11 @@
                    <button class='btn' type='button'>Request Invite</button>
                 </div>
               
-                <div class="col col-md-7">
-                   <img id="mockup" class="movedown img-fluid top-z-index" src="./images/image-mockups.png" alt="" width="767" height="939">
-                   <img class='desktop moveup' src="./images/bg-intro-desktop.svg"  alt=""  >
-                   <img class='mobile' src="./images/bg-intro-mobile.svg" alt="" >
+                <div class="col col-md-7 svg-container">
+        
+                   <img id="mockup" class="moveright movedown img-fluid top-z-index" src="./images/image-mockups.png" alt="" width="767" height="939">
+                   <img class='desktop pos-absolute moveup' src="./images/bg-intro-desktop.svg"  alt=""  >
+                   <img class='mobile pos-absolute moveup' src="./images/bg-intro-mobile.svg" alt="" >
                 </div>
               
           </section>
@@ -147,16 +148,20 @@
 
   </main>
   <footer>
-              About Us
-              Contact
-              Blog
-              Careers
-              Support
-              Privacy Policy
-
-              Request Invite
-
-              © Easybank. All Rights Reserved
+        <nav aria-label="Footer navigation menu" class="d-flex flex-md-row flex-column">
+            <ul class="d-flex flex-column ">
+                <li><a>About Us</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+            <ul class="d-flex flex-column ">
+                <li><a>Careers</a></li>
+                <li><a>Support</a></li>
+                <li><a>Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="btn" >Request Invite</button>  
+        <small>© Easybank. All Rights Reserved</small>
   </footer>
   <aside>
     <div class="attribution text-center mt-5">
