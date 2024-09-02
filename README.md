@@ -52,8 +52,25 @@ Users should be able to:
 - I had some trouble with the intro SVGs and from my research, probably because they have the same IDs. I had first added the SVGs embedded inline into the html file.
   I read that for the SVGs to be responsive the width/height need to be removed from the SVG tag and to only use viewBox with width/height values (see link 3)
 - And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` (see link 2)
-- Then I also had trouble with outer__second SVGs again when I wanted to use flex to place items center or to the start based on screensize.
+  Obviously I was not going to simply change the IDs on the SVGs as I have no idea how these would be affected by that.
+- Then I also had trouble with outer__second SVGs when I wanted to use flex to place items center or to the start based on screensize.
   I found a stackoverflow post that explained it was because my svg has no internal width/height. I added a wrapper element to fix this (see link 1)
+- I then realized that outer__second SVGs also had the same IDs so had to change to using `<img>` for each as well.
+  Then when the SVG disappeared again, I figured I had to add `svg{width:100%; height:100%;}` to the SVGs themselves here as well.
+  I first used `svg{width:100%; height:100%;}` like so :
+  html:
+   ```
+        <div class="svg-outer">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><defs><linearGradient id="a" x1="0%" x2="99.58%" y1="0%" y2="99.58%"><stop offset="0%" stop-color="#33D35E"/><stop offset="100%" stop-color="#2AB6D9"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle cx="36" cy="36" r="36" fill="url(#a)"/><path fill="#FFF" fill-rule="nonzero" d="M36 16a4.522 ... 17.29z"/></g></svg>
+        </div>
+  ```
+  scss:
+  ```
+    svg{
+      width:100%;
+      height:100%;
+    }
+  ```
 - I had trouble getting the images in outer__third to be the same height, even though the heights are all specified to 400px in img. 
   I remembered using aspect-ratio before with images, and thought I'd try it on img and it worked.
 - I also had some trouble (when I used flex) to get the columns to be the same width, so decided to try with grid instead.

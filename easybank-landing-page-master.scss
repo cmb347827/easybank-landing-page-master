@@ -109,6 +109,10 @@ body {
               max-height:50%;
             }
         }
+        .svg-100{
+            width:100%;
+            height:100%;
+        }
           
         @include padding(2em);
         &__first{
@@ -156,10 +160,6 @@ body {
             }
         }
         &__second{
-           svg{
-            width:100%;
-            height:100%;
-           }
           
            .grid-item{
                 place-self: start;
