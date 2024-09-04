@@ -109,8 +109,6 @@ body {
    background-image: linear-gradient(to right,map-get($colors,Lime Green),map-get($colors,Bright Cyan));
 }
 
-
-      
     header{
       @include padding(2em);
       #desktop-button{
@@ -187,7 +185,7 @@ body {
             }
             img {
               aspect-ratio: 1.5 / 1;
-
+              
             }
             @media screen and(min-width:768px){
               position:relative;
@@ -202,6 +200,7 @@ body {
     }
       
     footer{
+        padding: 2em;
         @include bg-color(map-get($colors,Dark Blue),nth($fallback-colors,1));
         @include font-color(map-get($colors,White),nth($fallback-colors,7));
         ul {

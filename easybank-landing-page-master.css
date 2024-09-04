@@ -119,6 +119,7 @@ header {
         display: block; } }
 
 footer {
+  padding: 2em;
   background-color: Blue4;
   background-color: #2d314d;
   color: Snow;
