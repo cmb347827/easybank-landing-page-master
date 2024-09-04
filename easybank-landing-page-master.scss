@@ -2,16 +2,17 @@
 @import '_globals.scss';
 
 $colors: (
-  Soft Blue: hsl(231, 69%, 60%),
-  Soft Red: hsl(0, 94%, 66%), 
-  Grayish Blue: hsl(229, 8%, 60%),
-  Very Dark Blue: hsl(229, 31%, 21%),
-  White: hsl(0,100%,100%),
-  black: hsl(100,0%,0%),
+    Dark Blue: hsl(233, 26%, 24%),
+   Lime Green: hsl(136, 65%, 51%),
+   Bright Cyan: hsl(192, 70%, 51%),
+   Grayish Blue: hsl(233, 8%, 62%),
+   Light Grayish Blue: hsl(220, 16%, 96%),
+   Very Light Gray: hsl(0, 0%, 98%),
+   White: hsl(0, 0%, 100%),
 );
 
 $fallback-colors: (
-  'Absolute Zero', 'Alizarin crimson',CadetBlue4, NavyBlue, Snow, black
+  Blue4, 'Bright Green', Cyan1, Honeydew2,Honeydew1,Gray95,Snow
 );
 
 @mixin background($url,$position:auto,$size:auto,$repeat:no-repeat,$fixed:fixed,$color:white){
@@ -68,7 +69,45 @@ body {
   opacity:1;
 }
 
+.outer-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+  
+  @media screen and(min-width:768px){
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    word-wrap: break-word;
+    justify-items: center;
+    align-items: start;
+    column-gap: 15px;
+  }
+}
+.outer-2-column-grid{
+    @extend .outer-grid;
+    @media screen and(min-width:768px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3,auto);
+      justify-items: start;
+    }
+}
+.svg-outer{
+  max-width:20%;
+  max-height:20%;
 
+  @media screen and(min-width:768px){
+    max-width:50%;
+    max-height:50%;
+  }
+}
+.svg-100{
+  width:100%;
+  height:100%;
+}
+.gradient-green-blue{
+   background-image: linear-gradient(to right,map-get($colors,Lime Green),map-get($colors,Bright Cyan));
+}
 
 
       
@@ -86,34 +125,7 @@ body {
     }
     .outer{
          
-        .outer-grid{
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            align-items: center;
-            
-            @media screen and(min-width:768px){
-              grid-auto-flow: row;
-              grid-template-columns: repeat(4, minmax(0, 1fr));
-              word-wrap: break-word;
-              justify-items: center;
-              align-items: start;
-            }
-        }
-        .svg-outer{
-            max-width:20%;
-            max-height:20%;
-         
-            @media screen and(min-width:768px){
-              max-width:50%;
-              max-height:50%;
-            }
-        }
-        .svg-100{
-            width:100%;
-            height:100%;
-        }
-          
+        
         @include padding(2em);
         &__first{
             .mobile{ 
@@ -190,6 +202,15 @@ body {
     }
       
     footer{
+        @include bg-color(map-get($colors,Dark Blue),nth($fallback-colors,1));
+        @include font-color(map-get($colors,White),nth($fallback-colors,7));
+        ul {
+           list-style-type:none;
+        }
+        #text {
+          filter:brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(5093%) hue-rotate(189deg) brightness(107%) contrast(94%);
+        }
+    
         .attribution{
           display:block;
           width:20%;

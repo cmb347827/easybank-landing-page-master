@@ -57,7 +57,7 @@ Users should be able to:
   I found a stackoverflow post that explained it was because my svg has no internal width/height. I added a wrapper element to fix this (see link 1)
 - I then realized that outer__second SVGs also had the same IDs so had to change to using `<img>` for each as well.
   Then when the SVG disappeared again, I figured I had to add `svg{width:100%; height:100%;}` to the SVGs themselves here as well.
-  I first used `svg{width:100%; height:100%;}` like so :
+  So I first used `svg{width:100%; height:100%;}` like so , which did not work because of same IDs:
   html:
    ```
         <div class="svg-outer">

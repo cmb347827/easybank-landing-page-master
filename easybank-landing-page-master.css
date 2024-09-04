@@ -5,10 +5,9 @@
 
 html,
 body {
-  background-color: Snow;
+  background-color: Honeydew1;
   background-color: white;
-  color: black;
-  color: black;
+  color: Gray95;
   font-size: 18px;
   font-weight: 400;
   font-family: "Rubik", sans-serif; }
@@ -24,6 +23,41 @@ body {
   z-index: 1;
   opacity: 1; }
 
+.outer-grid, .outer-2-column-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .outer-grid, .outer-2-column-grid {
+      grid-auto-flow: row;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      word-wrap: break-word;
+      justify-items: center;
+      align-items: start;
+      column-gap: 15px; } }
+
+@media screen and (min-width: 768px) {
+  .outer-2-column-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: start; } }
+
+.svg-outer {
+  max-width: 20%;
+  max-height: 20%; }
+  @media screen and (min-width: 768px) {
+    .svg-outer {
+      max-width: 50%;
+      max-height: 50%; } }
+
+.svg-100 {
+  width: 100%;
+  height: 100%; }
+
+.gradient-green-blue {
+  background-image: linear-gradient(to right, #31d35c, #2bb7da); }
+
 header {
   padding: 2em; }
   header #desktop-button {
@@ -36,28 +70,6 @@ header {
 
 .outer {
   padding: 2em; }
-  .outer .outer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    align-items: center; }
-    @media screen and (min-width: 768px) {
-      .outer .outer-grid {
-        grid-auto-flow: row;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        word-wrap: break-word;
-        justify-items: center;
-        align-items: start; } }
-  .outer .svg-outer {
-    max-width: 20%;
-    max-height: 20%; }
-    @media screen and (min-width: 768px) {
-      .outer .svg-outer {
-        max-width: 50%;
-        max-height: 50%; } }
-  .outer .svg-100 {
-    width: 100%;
-    height: 100%; }
   .outer__first .mobile {
     display: block; }
   .outer__first .desktop {
@@ -106,15 +118,24 @@ header {
       .outer .desktop {
         display: block; } }
 
-footer .attribution {
-  display: block;
-  width: 20%;
-  padding: 0;
-  margin: 0 auto; }
-@media screen and (min-width: 768px) {
-  footer {
-    position: relative;
-    top: 7em; } }
+footer {
+  background-color: Blue4;
+  background-color: #2d314d;
+  color: Snow;
+  color: white; }
+  footer ul {
+    list-style-type: none; }
+  footer #text {
+    filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(5093%) hue-rotate(189deg) brightness(107%) contrast(94%); }
+  footer .attribution {
+    display: block;
+    width: 20%;
+    padding: 0;
+    margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    footer {
+      position: relative;
+      top: 7em; } }
 
 @media screen and (min-width: 768px) {
   aside {
