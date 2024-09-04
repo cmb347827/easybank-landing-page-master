@@ -71,8 +71,8 @@ Users should be able to:
       height:100%;
     }
   ```
-- I had trouble getting the images in outer__third to be the same height, even though the heights are all specified to 400px in img. 
-  I remembered using aspect-ratio before with images, and thought I'd try it on img and it worked.
+- I had trouble getting the images in outer__third to be the same height in desktop view, even though the heights are all specified to 400px in the `<img>` tag. I remembered using aspect-ratio before with images, and thought I'd try it on img in scss and it worked.
+   But then I noticed that the widths were not the same still in mobile . I had to explicitly set the width/height for `<img>` in scss and that together with img-fluid works.
 - I also had some trouble (when I used flex) to get the columns to be the same width, so decided to try with grid instead.
   (see link 4)
  

@@ -170,6 +170,8 @@ body {
             }
         }
         &__second{
+          @include bg-color(map-get($colors,Light Grayish Blue),nth($fallback-colors,5));
+          padding: 3em;
           
            .grid-item{
                 place-self: start;
@@ -184,8 +186,9 @@ body {
                 place-self: start;
             }
             img {
-              aspect-ratio: 1.5 / 1;
-              
+              //aspect-ratio: 1.5 / 1;
+              width:600px;
+              height:400px;
             }
             @media screen and(min-width:768px){
               position:relative;

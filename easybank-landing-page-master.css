@@ -96,16 +96,21 @@ header {
       left: max(20vw, 400px); } }
   .outer__first #mockup {
     aspect-ratio: 0.5/0.7; }
-  .outer__second .grid-item {
-    place-self: start; }
-  @media screen and (min-width: 768px) {
-    .outer__second {
-      position: relative;
-      top: 5em; } }
+  .outer__second {
+    background-color: Honeydew1;
+    background-color: #f3f4f6;
+    padding: 3em; }
+    .outer__second .grid-item {
+      place-self: start; }
+    @media screen and (min-width: 768px) {
+      .outer__second {
+        position: relative;
+        top: 5em; } }
   .outer__third .grid-item {
     place-self: start; }
   .outer__third img {
-    aspect-ratio: 1.5 / 1; }
+    width: 600px;
+    height: 400px; }
   @media screen and (min-width: 768px) {
     .outer__third {
       position: relative;
