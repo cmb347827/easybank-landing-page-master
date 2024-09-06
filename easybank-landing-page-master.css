@@ -10,7 +10,7 @@ body {
   color: Gray95;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Public Sans", sans-serif; }
 
 .hidden {
   display: none; }
@@ -67,6 +67,8 @@ header {
   @media screen and (min-width: 768px) {
     header {
       padding: 4em; }
+      header ul li {
+        text-decoration: green solid underline; }
       header #desktop-button {
         display: block; } }
 

@@ -51,7 +51,7 @@ body {
   font: {
      size: $font_size-18;
      weight: $font_weight-normal;
-	   family: "Rubik", sans-serif;
+	   family:  "Public Sans", sans-serif;
   }
 }
 .hidden{
@@ -118,6 +118,9 @@ body {
         display:none;
       }
       @media screen and(min-width:768px){
+        ul li{
+           text-decoration: green solid underline;
+        }
         @include padding(4em);
         #desktop-button{
            display:block;
