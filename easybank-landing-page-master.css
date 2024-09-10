@@ -60,6 +60,9 @@ body {
 .gradient-green-blue {
   background-image: linear-gradient(to right, #31d35c, #2bb7da); }
 
+button:hover {
+  background-image: linear-gradient(to right, #33e662, #30c3e8); }
+
 header {
   padding: 2em; }
   header #desktop-button {
@@ -67,8 +70,14 @@ header {
   @media screen and (min-width: 768px) {
     header {
       padding: 4em; }
-      header ul li {
-        text-decoration: green solid underline; }
+      header .navbar-nav li a {
+        color: Honeydew1;
+        color: #a3acbd; }
+        header .navbar-nav li a:hover {
+          color: Honeydew2;
+          color: #42434d; }
+      header ul li:hover {
+        border-bottom: 6px solid green; }
       header #desktop-button {
         display: block; } }
 
@@ -133,20 +142,25 @@ footer {
   background-color: #2d314d;
   color: Snow;
   color: white; }
-  footer ul {
+  footer ul li {
     list-style-type: none; }
+    footer ul li:hover {
+      color: "Bright Green";
+      color: #31d35c; }
+  footer svg:not(#logo) :hover {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(60%) saturate(488%) hue-rotate(120deg) brightness(92%) contrast(96%); }
   footer #text {
     filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(5093%) hue-rotate(189deg) brightness(107%) contrast(94%); }
-  footer .attribution {
-    display: block;
-    width: 20%;
-    padding: 0;
-    margin: 0 auto; }
   @media screen and (min-width: 768px) {
     footer {
       position: relative;
       top: 7em; } }
 
+aside .attribution {
+  display: block;
+  width: 20%;
+  padding: 0;
+  margin: 0 auto; }
 @media screen and (min-width: 768px) {
   aside {
     position: relative;
