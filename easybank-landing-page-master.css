@@ -27,13 +27,13 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  align-items: center; }
+  align-items: center;
+  justify-items: center; }
   @media screen and (min-width: 768px) {
     .outer-grid, .outer-2-column-grid {
       grid-auto-flow: row;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       word-wrap: break-word;
-      justify-items: center;
       align-items: start;
       column-gap: 15px; } }
 
@@ -127,7 +127,10 @@ header {
   @media screen and (min-width: 768px) {
     .outer__third {
       position: relative;
-      top: 5em; } }
+      top: 5em; }
+      .outer__third h4:hover {
+        color: "Bright Green";
+        color: #31d35c; } }
   @media screen and (min-width: 768px) {
     .outer {
       padding: 4em; }

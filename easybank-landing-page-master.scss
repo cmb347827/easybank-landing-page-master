@@ -76,12 +76,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     align-items: center;
+    justify-items: center;
   
   @media screen and(min-width:768px){
       grid-auto-flow: row;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       word-wrap: break-word;
-      justify-items: center;
       align-items: start;
       column-gap: 15px;
   }
@@ -209,6 +209,11 @@ button:hover{
             @media screen and(min-width:768px){
               position:relative;
               top:5em;
+              h4{
+                &:hover{
+                  @include font-color(map-get($colors,Lime Green),nth($fallback-colors,2));
+                }
+              }
             }
         }
         @media screen and(min-width:768px){
