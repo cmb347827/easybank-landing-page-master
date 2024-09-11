@@ -10,21 +10,17 @@ $(window).on('load',function(){
 	$("#navbarCollapse").on("show.bs.collapse", function(){
         //menu is collapsed, show close icon.
 		$('#open').toggleClass('hidden');
-		$('#close').toggleClass('show');
-		$('#nav').addClass('custom-nav');
+		$('#close').toggleClass('show').attr('aria-hidden',"false");
+		$('.toggle').attr('aria-expanded',"true");
+		$('.outer').addClass('overlay');
+		
     });
 	$("#navbarCollapse").on("hide.bs.collapse", function(){
-        $('#close').toggleClass('show');
+        $('#close').toggleClass('show').attr('aria-hidden',"true");
 		$('#open').toggleClass('hidden');
-		$('#nav').removeClass('custom-nav');
+		$('.toggle').attr('aria-expanded',"false");
+		$('.outer').removeClass('overlay');
     });
     
-	/*var mySVGsToInject = document.querySelectorAll('.svg-project');
-
-    // Do the injection
-    SVGInjector(mySVGsToInject);
-	SVGInject.setOptions({
-		
-		makeIdsUnique: true,
-	});*/
+	
 });
