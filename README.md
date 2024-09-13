@@ -75,6 +75,8 @@ Users should be able to:
    But then I noticed that the widths were not the same still in mobile . I had to explicitly set the width/height for `<img>` in scss and that together with img-fluid works. Until I realized that the images looked distored in desktop view. I remembered about `object-fit: cover;` and after applying that the images no longer look distored.
 - I also had some trouble (when I used flex) to get the columns to be the same width, so decided to try with grid instead.
   (see link 4)
+- I paid more attention to font-sizes and how it affects readability at different screen widths.
+  I used `font-size:clamp( 1.1rem, 1.4rem, 3rem);` for `<p>` as well as all headers, and  `font-size:max(0.9rem, 1.6vw);` for navigation.
  
 ### Continued development
 

@@ -29,7 +29,9 @@ body {
   opacity: 1; }
 
 .z-index-99 {
-  z-index: 99; }
+  position: relative;
+  z-index: 99;
+  opacity: 1; }
 
 .outer-grid, .outer-2-column-grid {
   display: grid;
@@ -59,10 +61,8 @@ body {
   max-height: 20%; }
   @media screen and (min-width: 768px) {
     .svg-logo-outer {
-      width: 239px;
-      height: 120px;
-      max-width: 25em;
-      max-height: 4em; } }
+      max-width: 139px;
+      max-height: 20px; } }
 
 .svg-outer {
   max-width: 20%;
@@ -85,9 +85,11 @@ button:hover:not(#menubutton) {
   background-image: linear-gradient(to right, #33e662, #30c3e8); }
 
 .btn {
-  font-size: clamp(0.8rem, 1.2rem, 1.8rem); }
+  font-size: clamp(0.8rem, 1.2rem, 1.1vw); }
 
 header {
+  background-color: Honeydew1;
+  background-color: white;
   padding: 0 2em; }
   header #desktop-button {
     display: none; }
@@ -101,7 +103,7 @@ header {
       margin-top: 50px;
       left: 15%;
       top: 100%;
-      font-size: max(0.9rem, 1.6vw); }
+      font-size: max(0.8rem, 1.3vw); }
       header nav #navbarCollapse ul {
         position: relative;
         width: 30em;
@@ -117,7 +119,8 @@ header {
         header nav #navbarCollapse {
           position: relative;
           margin-top: 0;
-          top: 0; } }
+          top: 0;
+          left: 0; } }
   @media screen and (min-width: 768px) {
     header {
       padding: 4em; }
@@ -155,19 +158,16 @@ header {
     position: relative; }
   .outer__first .pos-absolute {
     position: absolute; }
-  .outer__first .moveup {
+  .outer__first .moveup-svg {
     bottom: 10.8em; }
-    @media screen and (min-width: 1600px) {
-      .outer__first .moveup {
-        bottom: 8em; } }
-  .outer__first .movedown {
+    @media screen and (min-width: 768px) {
+      .outer__first .moveup-svg {
+        bottom: 15em; } }
+  .outer__first .moveup-image {
     bottom: 5em; }
-    @media screen and (min-width: 1600px) {
-      .outer__first .movedown {
-        top: 6em; } }
-  @media screen and (min-width: 1600px) {
-    .outer__first .moveright {
-      left: max(20vw, 400px); } }
+    @media screen and (min-width: 768px) {
+      .outer__first .moveup-image {
+        bottom: 8em; } }
   .outer__first #mockup {
     aspect-ratio: 0.5/0.7; }
   .outer__second {

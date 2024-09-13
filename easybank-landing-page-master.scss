@@ -1,4 +1,3 @@
-
 @import '_globals.scss';
 
 $colors: (
@@ -75,7 +74,9 @@ body {
   opacity:1;
 }
 .z-index-99{
+   position: relative;
    z-index:99;
+   opacity:1;
 }
 
 .outer-grid{
@@ -108,10 +109,9 @@ body {
     max-height:20%;
 
     @media screen and(min-width:768px){
-      width: 239px;
-      height:120px;
-      max-width:25em;
-      max-height:4em;
+      max-width: 139px;
+      max-height:20px;
+  
     }
 }
 .svg-outer{
@@ -136,11 +136,12 @@ button:hover:not(#menubutton){
   background-image: linear-gradient(to right,map-get($colors,Light Lime Green),map-get($colors,Light Bright Cyan));
 }
 .btn{
-  font-size:clamp(0.8rem,1.2rem,1.8rem);
+  font-size:clamp(0.8rem,1.2rem,1.1vw);
+  
 }
 
     header{
-      
+      @include bg-color(map-get($colors,White),nth($fallback-colors,5));
       @include padding(0 2em);
       #desktop-button{
         display:none;
@@ -155,7 +156,7 @@ button:hover:not(#menubutton){
           margin-top: 50px;
           left:15%;
           top:100%;
-          font-size:max(0.9rem, 1.6vw);
+          font-size:max(0.8rem, 1.3vw);
 
           ul {
             position:relative;
@@ -171,6 +172,7 @@ button:hover:not(#menubutton){
             position:relative;
             margin-top:0;
             top:0;
+            left:0;
           }
         }
       }
@@ -223,22 +225,22 @@ button:hover:not(#menubutton){
             .pos-absolute{
                position:absolute;
             }
-            .moveup{
+            .moveup-svg{
               bottom:10.8em;
-              @media screen and(min-width:1600px){
-                   bottom: 8em;
+              @media screen and(min-width:768px){
+                   bottom: 15em;
               }
             }
-            .movedown{
+            .moveup-image{
               bottom:5em;
-              @media screen and(min-width:1600px){
-                   top: 6em;
+              @media screen and(min-width:768px){
+                   bottom: 8em;
               }
             }
             
             .moveright{
-              @media screen and(min-width:1600px){
-                left:max(20vw, 400px);
+              @media screen and(min-width:768px){
+                //left:max(20vw, 400px);
               }
             }
             #mockup{
@@ -332,4 +334,3 @@ button:hover:not(#menubutton){
     }
     
       
-
