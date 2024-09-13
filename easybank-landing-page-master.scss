@@ -126,18 +126,20 @@ button:hover:not(#menubutton){
 }
 
     header{
-      //position:relative;
+      
       @include padding(0 2em);
       #desktop-button{
         display:none;
       }
       nav{
+
         position:relative;
         @include bg-color(map-get($colors,White),nth($fallback-colors,5));
         #navbarCollapse{
           position:absolute;
           margin-top:50px;
           top:100%;
+          font-size:1.1rem;
           ul {
             position:relative;
             width: 30em;
@@ -176,6 +178,7 @@ button:hover:not(#menubutton){
     .outer{
         position:relative;
         @include padding(2em);
+        font-size:1.3rem;
         &__first{
             .mobile{ 
               display:block;

@@ -84,7 +84,8 @@ header {
     header nav #navbarCollapse {
       position: absolute;
       margin-top: 50px;
-      top: 100%; }
+      top: 100%;
+      font-size: 1.1rem; }
       header nav #navbarCollapse ul {
         position: relative;
         width: 30em;
@@ -117,7 +118,8 @@ header {
 
 .outer {
   position: relative;
-  padding: 2em; }
+  padding: 2em;
+  font-size: 1.3rem; }
   .outer__first .mobile {
     display: block; }
   .outer__first .desktop {
