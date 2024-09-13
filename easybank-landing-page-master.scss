@@ -151,9 +151,12 @@ button:hover:not(#menubutton){
         @include bg-color(map-get($colors,White),nth($fallback-colors,5));
         #navbarCollapse{
           position:absolute;
-          margin-top:50px;
+          width: 250px;
+          margin-top: 50px;
+          left:15%;
           top:100%;
           font-size:max(0.9rem, 1.6vw);
+
           ul {
             position:relative;
             width: 30em;

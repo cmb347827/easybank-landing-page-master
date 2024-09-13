@@ -97,7 +97,9 @@ header {
     background-color: white; }
     header nav #navbarCollapse {
       position: absolute;
+      width: 250px;
       margin-top: 50px;
+      left: 15%;
       top: 100%;
       font-size: max(0.9rem, 1.6vw); }
       header nav #navbarCollapse ul {
