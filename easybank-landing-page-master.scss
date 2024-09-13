@@ -139,7 +139,7 @@ button:hover:not(#menubutton){
           position:absolute;
           margin-top:50px;
           top:100%;
-          font-size:clamp( 1rem, 1.1rem, 1.3rem);
+          font-size:clamp( 1rem, 1.1rem, 3rem);
           ul {
             position:relative;
             width: 30em;
@@ -177,7 +177,7 @@ button:hover:not(#menubutton){
     .outer{
         position:relative;
         @include padding(2em);
-        font-size:clamp( 1.2rem, 1.3rem, 1.5rem);
+        font-size:clamp( 1.2rem, 1.3rem, 4rem);
         &__first{
             .mobile{ 
               display:block;
