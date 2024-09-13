@@ -139,11 +139,10 @@ button:hover:not(#menubutton){
           position:absolute;
           margin-top:50px;
           top:100%;
-          font-size:1.1rem;
+          font-size:clamp( 1rem, 1.1rem, 1.3rem);
           ul {
             position:relative;
             width: 30em;
-            margin-left:3em;
             @include bg-color(map-get($colors,White),nth($fallback-colors,5));
             @include font-color(map-get($colors,Black),nth($fallback-colors,6));
             @media screen and(min-width:768px){
@@ -178,7 +177,7 @@ button:hover:not(#menubutton){
     .outer{
         position:relative;
         @include padding(2em);
-        font-size:1.3rem;
+        font-size:clamp( 1.2rem, 1.3rem, 1.5rem);
         &__first{
             .mobile{ 
               display:block;

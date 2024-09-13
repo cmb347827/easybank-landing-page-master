@@ -85,11 +85,10 @@ header {
       position: absolute;
       margin-top: 50px;
       top: 100%;
-      font-size: 1.1rem; }
+      font-size: clamp(1rem, 1.1rem, 1.3rem); }
       header nav #navbarCollapse ul {
         position: relative;
         width: 30em;
-        margin-left: 3em;
         background-color: Honeydew1;
         background-color: white;
         color: Gray95; }
@@ -119,7 +118,7 @@ header {
 .outer {
   position: relative;
   padding: 2em;
-  font-size: 1.3rem; }
+  font-size: clamp(1.2rem, 1.3rem, 1.5rem); }
   .outer__first .mobile {
     display: block; }
   .outer__first .desktop {
