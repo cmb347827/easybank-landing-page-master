@@ -124,6 +124,9 @@ body {
 button:hover:not(#menubutton){
   background-image: linear-gradient(to right,map-get($colors,Light Lime Green),map-get($colors,Light Bright Cyan));
 }
+button{
+  font-size:clamp(1rem,1.3rem,1.4rem);
+}
 
     header{
       
@@ -132,14 +135,14 @@ button:hover:not(#menubutton){
         display:none;
       }
       nav{
-
+   
         position:relative;
         @include bg-color(map-get($colors,White),nth($fallback-colors,5));
         #navbarCollapse{
           position:absolute;
           margin-top:50px;
           top:100%;
-          font-size:clamp( 1rem, 2rem, 3rem);
+          font-size:clamp( 1rem, 1.2rem, 3rem);
           ul {
             position:relative;
             width: 30em;
@@ -177,7 +180,7 @@ button:hover:not(#menubutton){
     .outer{
         position:relative;
         @include padding(2em);
-        font-size:clamp( 1.2rem, 2.5rem, 4rem);
+        font-size:clamp( 1.1rem, 1.2rem, 3rem);
         &__first{
             .mobile{ 
               display:block;
