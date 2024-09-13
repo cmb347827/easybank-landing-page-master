@@ -50,7 +50,7 @@ $fallback-colors: (
 html,
 body {
   @include bg-color(map-get($colors,White),nth($fallback-colors,5));
-  @include font-color(map-get($colors,Black),nth($fallback-colors,6));
+  @include font-color(map-get($colors,Dark Blue),nth($fallback-colors,1));
   font: {
      size: $font_size-18;
      weight: $font_weight-normal;
@@ -103,6 +103,17 @@ body {
         justify-items: start;
     }
 }
+.svg-logo-outer{
+    max-width:20%;
+    max-height:20%;
+
+    @media screen and(min-width:768px){
+      width: 239px;
+      height:120px;
+      max-width:25em;
+      max-height:4em;
+    }
+}
 .svg-outer{
   max-width:20%;
   max-height:20%;
@@ -124,8 +135,8 @@ body {
 button:hover:not(#menubutton){
   background-image: linear-gradient(to right,map-get($colors,Light Lime Green),map-get($colors,Light Bright Cyan));
 }
-button{
-  font-size:clamp(1rem,1.3rem,1.4rem);
+.btn{
+  font-size:clamp(0.8rem,1rem,1.8rem);
 }
 
     header{
@@ -142,12 +153,12 @@ button{
           position:absolute;
           margin-top:50px;
           top:100%;
-          font-size:clamp( 1rem, 1.2rem, 3rem);
+          font-size:max(0.9rem, 1.7vw);
           ul {
             position:relative;
             width: 30em;
             @include bg-color(map-get($colors,White),nth($fallback-colors,5));
-            @include font-color(map-get($colors,Black),nth($fallback-colors,6));
+            @include font-color(map-get($colors,Dark Blue),nth($fallback-colors,1));
             @media screen and(min-width:768px){
                width:auto;
                margin-left:0;
@@ -180,7 +191,23 @@ button{
     .outer{
         position:relative;
         @include padding(2em);
+        p{
+          font-weight:$font-weight-light;
+        }
         font-size:clamp( 1.1rem, 1.2rem, 3rem);
+        h1{
+          font-size:clamp( 1.1rem, 2rem, 3rem);
+        }
+        h2{
+          font-size:clamp( 1.1rem, 1.7rem, 3rem);
+          font-weight: $font_weight-bold;
+        }
+        h3{
+          font-size:clamp( 1.1rem, 1.5rem, 3rem);
+        }
+        h4{
+          font-size:clamp( 1.1rem, 1.4rem, 3rem);
+        }
         &__first{
             .mobile{ 
               display:block;
@@ -221,7 +248,7 @@ button{
         &__second{
           @include bg-color(map-get($colors,Light Grayish Blue),nth($fallback-colors,5));
           padding: 3em;
-          
+          margin-top: 3em;
            .grid-item{
               place-self: start;
            }
@@ -290,7 +317,10 @@ button{
           width:20%;
           padding:0;
           @include margin(0 auto);
-
+          a{
+            text-decoration:none;
+            @include font-color(map-get($colors,Dark Blue),nth($fallback-colors,1)); 
+          }
         }
         @media screen and(min-width:768px){
           position:relative;

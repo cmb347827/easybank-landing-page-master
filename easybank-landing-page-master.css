@@ -7,7 +7,8 @@ html,
 body {
   background-color: Honeydew1;
   background-color: white;
-  color: Gray95;
+  color: Blue4;
+  color: #2d314d;
   font-size: 18px;
   font-weight: 400;
   font-family: "Public Sans", sans-serif; }
@@ -53,6 +54,16 @@ body {
     grid-template-rows: repeat(3, auto);
     justify-items: start; } }
 
+.svg-logo-outer {
+  max-width: 20%;
+  max-height: 20%; }
+  @media screen and (min-width: 768px) {
+    .svg-logo-outer {
+      width: 239px;
+      height: 120px;
+      max-width: 25em;
+      max-height: 4em; } }
+
 .svg-outer {
   max-width: 20%;
   max-height: 20%; }
@@ -73,8 +84,8 @@ body {
 button:hover:not(#menubutton) {
   background-image: linear-gradient(to right, #33e662, #30c3e8); }
 
-button {
-  font-size: clamp(1rem, 1.3rem, 1.4rem); }
+.btn {
+  font-size: clamp(0.8rem, 1rem, 1.8rem); }
 
 header {
   padding: 0 2em; }
@@ -88,13 +99,14 @@ header {
       position: absolute;
       margin-top: 50px;
       top: 100%;
-      font-size: clamp(1rem, 1.2rem, 3rem); }
+      font-size: max(0.9rem, 1.7vw); }
       header nav #navbarCollapse ul {
         position: relative;
         width: 30em;
         background-color: Honeydew1;
         background-color: white;
-        color: Gray95; }
+        color: Blue4;
+        color: #2d314d; }
         @media screen and (min-width: 768px) {
           header nav #navbarCollapse ul {
             width: auto;
@@ -122,6 +134,17 @@ header {
   position: relative;
   padding: 2em;
   font-size: clamp(1.1rem, 1.2rem, 3rem); }
+  .outer p {
+    font-weight: 300; }
+  .outer h1 {
+    font-size: clamp(1.1rem, 2rem, 3rem); }
+  .outer h2 {
+    font-size: clamp(1.1rem, 1.7rem, 3rem);
+    font-weight: 700; }
+  .outer h3 {
+    font-size: clamp(1.1rem, 1.5rem, 3rem); }
+  .outer h4 {
+    font-size: clamp(1.1rem, 1.4rem, 3rem); }
   .outer__first .mobile {
     display: block; }
   .outer__first .desktop {
@@ -148,7 +171,8 @@ header {
   .outer__second {
     background-color: Honeydew1;
     background-color: #f3f4f6;
-    padding: 3em; }
+    padding: 3em;
+    margin-top: 3em; }
     .outer__second .grid-item {
       place-self: start; }
     .outer__second .header-height {
@@ -201,6 +225,10 @@ aside .attribution {
   width: 20%;
   padding: 0;
   margin: 0 auto; }
+  aside .attribution a {
+    text-decoration: none;
+    color: Blue4;
+    color: #2d314d; }
 @media screen and (min-width: 768px) {
   aside {
     position: relative;
