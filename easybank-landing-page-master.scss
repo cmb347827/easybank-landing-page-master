@@ -193,8 +193,8 @@ button:hover:not(#menubutton){
         @include padding(2em);
         p{
           font-weight:$font-weight-light;
+          font-size:clamp( 1.1rem, 1.3rem, 3rem);
         }
-        font-size:clamp( 1.1rem, 1.2rem, 3rem);
         h1{
           font-size:clamp( 1.1rem, 2rem, 3rem);
         }
