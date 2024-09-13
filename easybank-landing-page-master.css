@@ -85,7 +85,7 @@ button:hover:not(#menubutton) {
   background-image: linear-gradient(to right, #33e662, #30c3e8); }
 
 .btn {
-  font-size: clamp(0.8rem, 1rem, 1.8rem); }
+  font-size: clamp(0.8rem, 1.2rem, 1.8rem); }
 
 header {
   padding: 0 2em; }
@@ -99,7 +99,7 @@ header {
       position: absolute;
       margin-top: 50px;
       top: 100%;
-      font-size: max(0.9rem, 1.7vw); }
+      font-size: max(0.9rem, 1.6vw); }
       header nav #navbarCollapse ul {
         position: relative;
         width: 30em;
