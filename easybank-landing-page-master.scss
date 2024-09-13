@@ -218,7 +218,11 @@ button:hover:not(#menubutton){
           padding: 3em;
           
            .grid-item{
-                place-self: start;
+              place-self: start;
+           }
+           .header-height{
+              //so paragraphs start at same line height 
+              height: 7em;
            }
            @media screen and(min-width:768px){
               position:relative;
@@ -226,9 +230,7 @@ button:hover:not(#menubutton){
            }
         }
         &__third{
-            .grid-item{
-                place-self: start;
-            }
+            
             img {
               width:600px;
               height:400px;
