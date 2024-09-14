@@ -66,6 +66,13 @@ body {
       max-width: 30%;
       max-height: 30%; } }
 
+@media screen and (min-width: 768px) {
+  .svg-outer-first {
+    width: 1400px;
+    height: 1100px;
+    max-width: 60%;
+    max-height: 60%; } }
+
 .svg-outer {
   max-width: 20%;
   max-height: 20%; }
@@ -170,8 +177,6 @@ header {
     @media screen and (min-width: 768px) {
       .outer__first .moveup-image {
         bottom: 8em; } }
-  .outer__first #mockup {
-    aspect-ratio: 0.5/0.7; }
   .outer__second {
     background-color: Honeydew1;
     background-color: #f3f4f6;

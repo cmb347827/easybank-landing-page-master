@@ -104,6 +104,7 @@ body {
         justify-items: start;
     }
 }
+
 .svg-logo-outer{
     max-width:20%;
     max-height:20%;
@@ -114,6 +115,16 @@ body {
       max-width: 30%;
       max-height: 30%;
     }
+}
+.svg-outer-first{
+     
+
+  @media screen and(min-width:768px){
+     width:1400px;
+     height:1100px;
+     max-width:60%;
+     max-height:60%;
+  }
 }
 .svg-outer{
   max-width:20%;
@@ -130,6 +141,7 @@ body {
   width:100%;
   height:100%;
 }
+
 .gradient-green-blue{
    background-image: linear-gradient(to right,map-get($colors,Lime Green),map-get($colors,Bright Cyan));
 }
@@ -245,7 +257,7 @@ button:hover:not(#menubutton){
               }
             }
             #mockup{
-               aspect-ratio: 0.5/0.7;
+               //aspect-ratio: 0.5/0.7;
             }
             @media screen and(min-width:768px){
                 
