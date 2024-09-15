@@ -53,6 +53,9 @@ Users should be able to:
   I read that for the SVGs to be responsive the width/height need to be removed from the SVG tag and to only use viewBox with width/height values (see link 3)
 - And for the IDs not to clash I should embed the SVGs either using `<img>` or `<object>` (see link 2)
   Obviously I was not going to simply change the IDs on the SVGs as I have no idea how these would be affected by that.
+- I also wanted the SVG to stay in relative place while the viewport is resized. I read online that in order to do that the parent element needs to be `position:relative` and the SVG should be `position:absolute;`.
+  But I did notice that when I do this, the SVG is a lot smaller, so I decided not to use this technique.
+  
 - Then I also had trouble with outer__second SVGs when I wanted to use flex to place items center or to the start based on screensize.
   I found a stackoverflow post that explained it was because my svg has no internal width/height. I added a wrapper element to fix this (see link 1)
 - I then realized that outer__second SVGs also had the same IDs so had to change to using `<img>` for each as well.

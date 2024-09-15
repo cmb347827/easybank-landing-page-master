@@ -159,7 +159,7 @@ header {
       display: block; }
     .outer__first .desktop {
       display: none; }
-    .outer__first .svg-container {
+    .outer__first .pos-relative {
       position: relative; }
     .outer__first .pos-absolute {
       position: absolute; }
