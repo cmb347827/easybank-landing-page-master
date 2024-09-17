@@ -23,16 +23,19 @@ body {
   opacity: 0.5;
   background-color: rgba(6, 4, 4, 0.5); }
 
-.top-z-index {
+.top-z-index, .top-z-index-99 {
   position: relative;
   z-index: 1;
   opacity: 1; }
 
-.svg-outer {
+.top-z-index-99 {
+  z-index: 99; }
+
+.svg-logo-outer {
   max-width: 40%;
   max-height: 40%; }
   @media screen and (min-width: 768px) {
-    .svg-outer {
+    .svg-logo-outer {
       max-width: 20%;
       max-height: 20%; } }
 
@@ -49,6 +52,18 @@ button:hover:not(#menubutton) {
 .btn {
   font-size: clamp(0.8rem, 1.2rem, 1.1vw); }
 
+.mobile {
+  display: block; }
+
+.desktop {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  mobile {
+    display: none; }
+
+  desktop {
+    display: block; } }
 header {
   background-color: Honeydew1;
   background-color: white;
@@ -61,12 +76,12 @@ header {
     background-color: white; }
     header nav #navbarCollapse {
       position: absolute;
-      font-size: max(0.8rem, 1.3vw); }
+      font-size: max(0.8rem, 1.3vw);
+      top: 4em; }
       header nav #navbarCollapse .navbar-nav {
         position: absolute;
         width: 35em;
-        right: 50%;
-        top: 20%;
+        right: 55%;
         text-align: center;
         background-color: Honeydew1;
         background-color: white;
@@ -75,12 +90,12 @@ header {
         @media screen and (min-width: 768px) {
           header nav #navbarCollapse .navbar-nav {
             width: auto;
-            margin-left: 0; } }
+            position: relative;
+            right: 0; } }
       @media screen and (min-width: 768px) {
         header nav #navbarCollapse {
-          margin-top: 0;
           top: 0;
-          left: 0; } }
+          position: relative; } }
   @media screen and (min-width: 768px) {
     header {
       padding: 4em 2em;
@@ -110,13 +125,13 @@ header {
     font-size: clamp(1.1rem, 1.6rem, 3rem); }
   .outer h4 {
     font-size: clamp(1.1rem, 1.5rem, 3rem); }
-  .outer__first .mobile {
-    display: block; }
-  .outer__first .desktop {
-    display: none; }
-  @media screen and (min-width: 768px) {
-    .outer__first {
-      padding-bottom: 5em; } }
+  .outer__first .svg-move {
+    position: relative;
+    bottom: 90em;
+    left: 10em; }
+  .outer__first .mockup-move {
+    position: relative;
+    bottom: 5em; }
   .outer__second {
     background-color: Honeydew1;
     background-color: #f3f4f6; }
