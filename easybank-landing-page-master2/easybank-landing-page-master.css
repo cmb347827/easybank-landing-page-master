@@ -39,6 +39,13 @@ body {
       max-width: 20%;
       max-height: 20%; } }
 
+@media screen and (min-width: 768px) {
+  .svg-intro-outer {
+    min-height: 1100px;
+    height: 1034px;
+    min-width: 1300px;
+    height: 1271px; } }
+
 .svg-100 {
   width: 100%;
   height: 100%; }
@@ -128,10 +135,11 @@ header {
   .outer__first .svg-move {
     position: relative;
     bottom: 90em;
-    left: 10em; }
+    left: 20em; }
   .outer__first .mockup-move {
     position: relative;
-    bottom: 5em; }
+    bottom: 35em;
+    left: 30em; }
   .outer__second {
     background-color: Honeydew1;
     background-color: #f3f4f6; }
