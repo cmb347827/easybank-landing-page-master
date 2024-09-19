@@ -116,15 +116,16 @@ body {
       max-height: 30%;
     }
 }
-.svg-outer{
-  max-width:20%;
-  max-height:20%;
-
+.svg-intro-outer{
+   width: 375px;
+   height: 423px;
+   max-width: 100%;
+   max-height: 100%;
   @media screen and(min-width:768px){
-    width: 80px;
-    height:80px;
-    max-width:60%;
-    max-height:60%;
+      height: 1034px;
+      max-height: 100%;
+      width: 1271px;
+      max-width: 100%;
   }
 }
 .svg-100{
